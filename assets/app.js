@@ -16,7 +16,16 @@ const prev=document.querySelector('.prev');
 const next=document.querySelector('.next');
 const pauseBtn=document.querySelector('.pause');
 let current=0;let timer=null;let paused=false;
-function showSlide(i){if(!slides.length)return;current=(i+slides.length)%slides.length;slides.forEach((s,n)=>{s.classList.toggle('active',n===current);s.setAttribute('aria-hidden',String(n!==current));});}
+function showSlide(i){
+  if(!slides.length)return;
+  current=(i+slides.length)%slides.length;
+  slides.forEach((s,n)=>{
+    const active=n===current;
+    s.classList.toggle('active',active);
+    s.setAttribute('aria-hidden',String(!active));
+    if(active){s.removeAttribute('inert');}else{s.setAttribute('inert','');}
+  });
+}
 function startAuto(){clearInterval(timer);if(paused||slides.length<2)return;timer=setInterval(()=>showSlide(current+1),5200);}
 if(slides.length){
   showSlide(0);
