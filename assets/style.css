@@ -6,7 +6,7 @@ body{margin:0;font-family:Pretendard,Inter,"Noto Sans KR",system-ui,sans-serif;c
 a{text-decoration:none;color:inherit}button{font:inherit}h1,h2,h3,strong{word-break:keep-all}p{word-break:keep-all}
 .site-header{position:sticky;top:0;z-index:80;height:76px;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(5,46,114,.08)}
 .header-inner{height:100%;max-width:1440px;margin:0 auto;padding:0 36px;display:grid;grid-template-columns:1fr auto;align-items:center}
-.brand{font-size:28px;font-weight:950;letter-spacing:-.045em;color:var(--navy)}
+.brand{display:inline-flex;align-items:center;min-height:44px;width:max-content;font-size:28px;font-weight:950;letter-spacing:-.045em;color:var(--navy)}
 .nav{display:flex;gap:34px;font-size:12px;font-weight:850;letter-spacing:.04em;color:var(--navy)}
 .nav a{padding:29px 0;position:relative}
 .nav a:after{content:"";position:absolute;left:0;right:100%;bottom:20px;height:1px;background:var(--navy);transition:.25s}
@@ -36,11 +36,11 @@ a{text-decoration:none;color:inherit}button{font:inherit}h1,h2,h3,strong{word-br
 .service-overview{position:relative;min-height:470px}
 .service-overview>.sample-image{min-height:470px}
 .service-tag{position:absolute;left:18px;bottom:14px;font-size:11px;font-weight:900;color:var(--navy)}
-.service-side{display:flex;flex-direction:column;min-width:0}
+.service-side{display:flex;flex-direction:column;min-width:0;align-self:start}
 .service-images{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
 .service-photo{position:relative;aspect-ratio:4/3;min-height:0;overflow:hidden}
 .service-photo>.sample-image{position:absolute;inset:0}
-.service-links{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--blue);margin-top:auto}
+.service-links{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--blue);margin-top:24px}
 .service-links a{min-height:88px;padding:18px 12px 12px;border-right:1px solid var(--line)}.service-links a:last-child{border-right:0}
 .service-links strong{display:block;color:var(--navy);font-size:19px}.service-links span{display:block;margin-top:7px;color:var(--muted);font-size:13px}
 .featured{background:var(--navy);color:#fff;padding:0}
