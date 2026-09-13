@@ -25,16 +25,15 @@ VALUEON 본 회사 홈페이지.
 - 404 페이지
 - PC / 태블릿 / 모바일 반응형
 - 모바일 메뉴 / Hero 슬라이더 접근성 보완
+- 상품 01~03(고구마칩 / 헤어드라이어 / 참깨강정) 메인 이미지 적용
 
 ## 실물 이미지 수령 후 교체할 항목
-1. MAIN VISUAL 3장
-2. SERVICE: OVERVIEW / BRAND / PRODUCT 이미지
-3. FEATURED PRODUCT 이미지
-4. PRODUCT 01~06 이미지
-5. ABOUT VALUEON 대표 이미지
-6. 각 제품 상세 대표/디테일 이미지
-7. BRAND 01~06 로고 또는 대표 이미지
-8. 오시는길 지도/약도
+1. SERVICE: OVERVIEW / BRAND / PRODUCT 이미지
+2. PRODUCT 04~06 이미지
+3. ABOUT VALUEON 대표 이미지
+4. 각 제품 상세 추가 디테일 이미지
+5. BRAND 01~06 로고 또는 대표 이미지
+6. 오시는길 지도/약도
 
 ## 실제 정보 확정 후 입력할 항목
 - 법인명 / 대표자
