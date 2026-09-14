@@ -1,3 +1,4 @@
+a.hero-visual,a.featured-media{display:block}
 .real-media{width:100%;height:100%;display:block;object-fit:cover}
 .hero-visual>.real-media{width:100%;height:100%;object-fit:cover}
 .featured-media>.real-media{width:100%;min-height:432px;height:100%;object-fit:cover}
