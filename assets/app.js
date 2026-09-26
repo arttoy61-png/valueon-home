@@ -35,3 +35,32 @@ if(slides.length){
   document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else startAuto();});
   startAuto();
 }
+
+
+// VALUEON HOME ↔ VALUEON MAKE cross-site navigation
+const valueonMakeUrl='https://arttoy61-png.github.io/valueon-make/';
+if(nav && !nav.querySelector('[data-valueon-make]')){
+  const makeLink=document.createElement('a');
+  makeLink.href=valueonMakeUrl;
+  makeLink.textContent='MAKE 제작 ↗';
+  makeLink.dataset.valueonMake='';
+  makeLink.className='nav-make';
+  nav.appendChild(makeLink);
+  makeLink.addEventListener('click',()=>nav.classList.remove('open'));
+}
+document.querySelectorAll('.footer-links').forEach(links=>{
+  if(links.querySelector('[data-valueon-make]'))return;
+  const makeLink=document.createElement('a');
+  makeLink.href=valueonMakeUrl;
+  makeLink.textContent='VALUEON MAKE ↗';
+  makeLink.dataset.valueonMake='';
+  links.appendChild(makeLink);
+});
+document.querySelectorAll('.shop-support .customer-links').forEach(links=>{
+  if(links.querySelector('[data-valueon-make]'))return;
+  const makeLink=document.createElement('a');
+  makeLink.href=valueonMakeUrl;
+  makeLink.textContent='제품 제작 · VALUEON MAKE ↗';
+  makeLink.dataset.valueonMake='';
+  links.appendChild(makeLink);
+});
