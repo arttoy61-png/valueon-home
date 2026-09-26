@@ -3,6 +3,7 @@ const filterButtons = [...document.querySelectorAll('[data-filter]')];
 const shopCards = [...document.querySelectorAll('[data-category]')];
 function filterProducts(category) {
   const selected = filterButtons.some(b => b.dataset.filter === category) ? category : 'ALL';
+  document.querySelector('.curated-grid')?.classList.toggle('is-filtered', selected !== 'ALL');
   filterButtons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === selected)));
   shopCards.forEach(card => { card.hidden = selected !== 'ALL' && card.dataset.category !== selected; });
   const count = document.querySelector('.filter-count');
