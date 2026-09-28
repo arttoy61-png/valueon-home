@@ -110,3 +110,41 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
  .hero-slide.hero-food .hero-text{color:#31251c}
  .hero-slide.hero-food .hero-text h1{font-size:44px}
 }
+
+/* Hero mobile readability 2026-09-29 */
+@media(max-width:640px){
+  .hero-text{
+    left:6%;
+    right:6%;
+    bottom:92px;
+    max-width:88%;
+  }
+  .hero-text h1,
+  .hero-slide.hero-light .hero-text h1,
+  .hero-slide.hero-food .hero-text h1{
+    font-size:clamp(40px,10.8vw,48px);
+    line-height:1.13;
+    letter-spacing:-.045em;
+    word-break:keep-all;
+    text-wrap:balance;
+    margin-bottom:24px;
+  }
+  .hero-label{
+    font-size:12px;
+    line-height:1.45;
+    letter-spacing:-.015em;
+    margin-bottom:16px;
+    word-break:keep-all;
+  }
+  .hero-text .button{
+    margin-top:2px;
+  }
+}
+@media(max-width:390px){
+  .hero-text h1,
+  .hero-slide.hero-light .hero-text h1,
+  .hero-slide.hero-food .hero-text h1{
+    font-size:39px;
+    line-height:1.14;
+  }
+}
