@@ -50,9 +50,11 @@ if (heroCarousel) {
   prev?.addEventListener('click', () => { showHero(current - 1); startHero(); });
   next?.addEventListener('click', () => { showHero(current + 1); startHero(); });
   dots.forEach((dot, i) => dot.addEventListener('click', () => { showHero(i); startHero(); }));
-  heroCarousel.addEventListener('mouseenter', stopHero);
-  heroCarousel.addEventListener('mouseleave', startHero);
-  heroCarousel.addEventListener('focusin', stopHero);
-  heroCarousel.addEventListener('focusout', startHero);
+  // Keep the homepage hero rotating automatically even when the pointer rests on it.
+  // Manual navigation simply restarts the 5-second timer.
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopHero();
+    else startHero();
+  });
   startHero();
 }
