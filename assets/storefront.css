@@ -84,3 +84,29 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
   .feature-media{min-height:330px}
   .feature-gallery{grid-template-columns:1fr;gap:8px;padding:0 5%}
 }
+
+/* FOOD detail refresh 2026-09-29 */
+.hero-slide.hero-food{color:#31251c}
+.hero-slide.hero-food .hero-product{background:#f7f0e6}
+.hero-slide.hero-food .hero-product img{width:52%;height:86%;object-fit:contain;object-position:center;position:absolute;right:4%;top:7%;background:transparent}
+.hero-slide.hero-food .hero-shade{background:linear-gradient(90deg,#f7f0e6 0%,rgba(247,240,230,.98) 40%,rgba(247,240,230,.65) 56%,rgba(247,240,230,0) 74%)}
+.hero-slide.hero-sesame .hero-product{background:#f4eee5}
+.hero-slide.hero-food .button.light{background:#31251c;color:#fff}
+.hero-slide.hero-food .button.light:hover{background:var(--store-navy)}
+.food-detail .food-primary{background:#f7f1e8}
+.food-detail .food-primary img{aspect-ratio:1;object-fit:contain;padding:7%}
+.food-story{padding-bottom:60px}
+.food-feature-stack .feature-row{background:#fbf7f0}
+.food-feature-stack .feature-media{background:#f6efe4}
+.food-feature-stack .feature-media img{object-fit:contain;padding:7%}
+.food-feature-stack .food-warm{background:#f2a84a;color:#fff}
+.food-feature-stack .food-warm .feature-copy p,.food-feature-stack .food-warm .eyebrow{color:rgba(255,255,255,.86)}
+.food-feature-stack .sesame-warm{background:#d97832;color:#fff}
+.food-feature-stack .sesame-warm .feature-copy p,.food-feature-stack .sesame-warm .eyebrow{color:rgba(255,255,255,.86)}
+.food-feature-stack .sesame-close img{transform:scale(1.08)}
+@media(max-width:640px){
+ .hero-slide.hero-food .hero-product img{width:100%;height:54%;right:0;top:4%;object-position:center}
+ .hero-slide.hero-food .hero-shade{background:linear-gradient(0deg,rgba(247,240,230,1) 0%,rgba(247,240,230,.98) 44%,rgba(247,240,230,.2) 74%,rgba(247,240,230,0) 100%)}
+ .hero-slide.hero-food .hero-text{color:#31251c}
+ .hero-slide.hero-food .hero-text h1{font-size:44px}
+}
