@@ -457,3 +457,117 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
     padding:28px 6% 34px
   }
 }
+
+
+/* HOME verified visual assets 2026-09-29 */
+.home-lifestyle-slide{
+  color:#fff;
+}
+.home-lifestyle-slide .hero-product img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  background:#d8d0c4;
+}
+.home-lifestyle-slide .hero-shade{
+  background:
+    linear-gradient(90deg,rgba(19,18,17,.66) 0%,rgba(19,18,17,.48) 27%,rgba(19,18,17,.12) 55%,transparent 76%),
+    linear-gradient(0deg,rgba(18,17,15,.20),transparent 44%);
+}
+.home-lifestyle-slide .hero-text{
+  left:6.3%;
+  bottom:78px;
+  max-width:620px;
+  color:#fff;
+  text-shadow:none;
+}
+.home-lifestyle-slide .hero-label{
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+}
+.home-lifestyle-slide .hero-text h1{
+  color:#fff;
+  font-size:clamp(48px,4.7vw,70px);
+  line-height:1.08;
+  margin-bottom:28px;
+}
+.home-lifestyle-slide .button.light{
+  background:#fff;
+  color:#171A1F;
+}
+.home-lifestyle-slide .button.light:hover{
+  background:var(--store-navy);
+  color:#fff;
+}
+
+/* Use the exact generated triptych as three visible card crops. */
+.home-pick img{
+  object-fit:cover;
+}
+.home-pick.pick-sweet img{object-position:0% 50%}
+.home-pick.pick-dryer img{object-position:50% 50%}
+.home-pick.pick-sesame img{object-position:100% 50%}
+
+/* The customer block stays light; the photo belongs to the footer itself. */
+.home-page .shop-support{
+  background:#fbf8f2;
+  background-image:none;
+  min-height:280px;
+}
+.storefront.home-page footer{
+  position:relative;
+  min-height:190px;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(28,25,22,.74) 0%,rgba(28,25,22,.58) 48%,rgba(28,25,22,.36) 100%),
+    url("./store/home-footer-lifestyle.webp?v=20260929c") center center / cover no-repeat;
+  color:#fff;
+  border-top:0;
+  grid-template-columns:180px 1fr;
+  align-items:center;
+}
+.storefront.home-page footer .footer-brand,
+.storefront.home-page footer .footer-links,
+.storefront.home-page footer .footer-links a{
+  color:#fff;
+}
+.storefront.home-page footer .footer-body p{
+  color:rgba(255,255,255,.84);
+}
+.storefront.home-page footer .footer-body span{
+  color:rgba(255,255,255,.72);
+}
+
+@media(max-width:640px){
+  .home-lifestyle-slide .hero-product img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+  }
+  .home-lifestyle-slide .hero-shade{
+    background:linear-gradient(0deg,rgba(18,17,15,.86) 0%,rgba(18,17,15,.38) 50%,rgba(18,17,15,.06) 82%);
+  }
+  .home-lifestyle-slide .hero-text{
+    left:6%;
+    right:6%;
+    bottom:94px;
+    max-width:88%;
+  }
+  .home-lifestyle-slide .hero-text h1{
+    font-size:42px;
+    line-height:1.12;
+  }
+  .home-page .shop-support{
+    padding:42px 6%;
+    background:#fbf8f2;
+  }
+  .storefront.home-page footer{
+    min-height:230px;
+    background:
+      linear-gradient(0deg,rgba(28,25,22,.80),rgba(28,25,22,.58)),
+      url("./store/home-footer-lifestyle.webp?v=20260929c") center center / cover no-repeat;
+  }
+}
