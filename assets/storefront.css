@@ -571,3 +571,17 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
       url("./store/home-footer-lifestyle.webp?v=20260929d") center center / cover no-repeat;
   }
 }
+
+
+/* HOME card background safeguard 2026-09-29 */
+.home-pick{
+  background-image:url("./store/home-picks-triptych.webp?v=20260929d");
+  background-repeat:no-repeat;
+  background-size:300% 100%;
+}
+.home-pick.pick-sweet{background-position:0% 50%}
+.home-pick.pick-dryer{background-position:50% 50%}
+.home-pick.pick-sesame{background-position:100% 50%}
+.home-pick>img{
+  opacity:0;
+}
