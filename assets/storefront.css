@@ -522,7 +522,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
   overflow:hidden;
   background:
     linear-gradient(90deg,rgba(28,25,22,.74) 0%,rgba(28,25,22,.58) 48%,rgba(28,25,22,.36) 100%),
-    url("./store/home-footer-lifestyle.webp?v=20260929c") center center / cover no-repeat;
+    url("./store/home-footer-lifestyle.webp?v=20260929d") center center / cover no-repeat;
   color:#fff;
   border-top:0;
   grid-template-columns:180px 1fr;
@@ -568,6 +568,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
     min-height:230px;
     background:
       linear-gradient(0deg,rgba(28,25,22,.80),rgba(28,25,22,.58)),
-      url("./store/home-footer-lifestyle.webp?v=20260929c") center center / cover no-repeat;
+      url("./store/home-footer-lifestyle.webp?v=20260929d") center center / cover no-repeat;
   }
 }
