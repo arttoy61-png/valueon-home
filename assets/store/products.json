@@ -43,6 +43,21 @@
     "ai": true
   },
   {
+    "id": "item-07",
+    "name": "HANBUL 손톱깎이",
+    "category": "LIVING",
+    "image": "hanbul-nailclipper",
+    "tag": "정교한 손질을 더 간편하게",
+    "desc": "손톱 정리를 위한 HANBUL 케어 제품입니다.",
+    "spec": "세부 사양과 판매 구성은 문의해 주세요.",
+    "price": "가격 문의",
+    "points": [
+      "HANBUL 로고가 보이는 제품 디자인",
+      "손톱깎이와 보관 케이스 사진",
+      "네일파일 사용 모습"
+    ]
+  },
+  {
     "id": "item-04",
     "name": "데일리 핸드케어 세트",
     "category": "BEAUTY",
