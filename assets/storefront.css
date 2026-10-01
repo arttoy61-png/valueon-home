@@ -456,51 +456,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
 }
 
 
-/* HOME verified visual assets 2026-09-29 */
-.home-page .home-lifestyle-slide{
-  color:#fff;
-}
-.home-page .home-lifestyle-slide .hero-product img{
-  position:static;
-  inset:auto;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:right center;
-  background:#d8d0c4;
-}
-.home-page .home-lifestyle-slide .hero-shade{
-  background:
-    linear-gradient(90deg,rgba(19,18,17,.66) 0%,rgba(19,18,17,.48) 27%,rgba(19,18,17,.12) 55%,transparent 76%),
-    linear-gradient(0deg,rgba(18,17,15,.20),transparent 44%);
-}
-.home-page .home-lifestyle-slide .hero-text{
-  left:6.3%;
-  bottom:78px;
-  max-width:620px;
-  color:#fff;
-  text-shadow:none;
-}
-.home-page .home-lifestyle-slide .hero-label{
-  color:#fff;
-  font-size:15px;
-  font-weight:700;
-}
-.home-page .home-lifestyle-slide .hero-text h1{
-  color:#fff;
-  font-size:clamp(48px,4.7vw,70px);
-  line-height:1.08;
-  margin-bottom:28px;
-}
-.home-page .home-lifestyle-slide .button.light{
-  background:#fff;
-  color:#171A1F;
-}
-.home-page .home-lifestyle-slide .button.light:hover{
-  background:var(--store-navy);
-  color:#fff;
-}
-
+/* HOME verified visual assets 2026-09-29 — hero override removed; 7163534 hero presentation restored */
 /* The customer block stays light; the photo belongs to the footer itself. */
 .home-page .shop-support{
   background:#fbf8f2;
@@ -532,26 +488,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #1A
 }
 
 @media(max-width:640px){
-  .home-page .home-lifestyle-slide .hero-product img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:right center;
-  }
-  .home-page .home-lifestyle-slide .hero-shade{
-    background:linear-gradient(0deg,rgba(18,17,15,.86) 0%,rgba(18,17,15,.38) 50%,rgba(18,17,15,.06) 82%);
-  }
-  .home-page .home-lifestyle-slide .hero-text{
-    left:6%;
-    right:6%;
-    bottom:94px;
-    max-width:88%;
-  }
-  .home-page .home-lifestyle-slide .hero-text h1{
-    font-size:42px;
-    line-height:1.12;
-  }
-  .home-page .shop-support{
+          .home-page .shop-support{
     padding:42px 6%;
     background:#fbf8f2;
   }
